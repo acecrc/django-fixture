@@ -5,7 +5,7 @@ SQLite 3.7.17
 
 # ローカル開発環境での実行
 ## リポジトリからソースコードを取得
-$ git clone git@github.com:acecrc/django-todo.git  
+$ git clone git@github.com:acecrc/django-fixture.git  
 $ cd django-todo  
 
 ## 仮想環境の構築
@@ -16,9 +16,13 @@ $ source ~/eb-virt/bin/activate
 ## マイグレーションの実施
 (eb-virt) $ python3 manage.py migrate  
 
+## 初期データの読み込み実施
+(eb-virt) $ python3 manage.py loaddata fixture1.json  
+
 ## アプリケーションの起動
 (eb-virt) $ python3 manage.py runserver 8080  
 
 ## 動作確認
 ブラウザでToDoの一覧を表示させる。  
 http://127.0.0.1:8080/todo/list/  
+※5件のtodoが表示されること  
