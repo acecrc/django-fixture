@@ -6,7 +6,7 @@ SQLite 3.7.17
 # ローカル開発環境での実行
 ## リポジトリからソースコードを取得
 $ git clone git@github.com:acecrc/django-fixture.git  
-$ cd django-todo  
+$ cd django-fixture  
 
 ## 仮想環境の構築
 $ virtualenv ~/eb-virt  
